@@ -1,9 +1,7 @@
 body{
   background-color: #A64253;
   font-family: Poiret One;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 10px;
 }
 
 button{
@@ -13,8 +11,13 @@ button{
 
 }
 /*searchbar CSS*/
+.searchbar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .searchbar2{
-  width: 100%;
+  width: 84vw;
   max-width: 700px;
   background: rgba(255, 255, 255,0.2);
   border-radius: 60px;
@@ -67,6 +70,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  margin-left: 13px;
 }
 .currentWeather{
     border-bottom-right-radius: 10px;
@@ -74,7 +78,6 @@ body {
   width: 180px;
   height: 200px;
   background: rgb(237, 237, 237);
-  margin: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -156,3 +159,27 @@ body {
 }
 
 
+@media screen and (max-width: 600px) {
+  .currentWeather{
+    border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 180px;
+  height: 200px;
+  background: rgb(237, 237, 237);
+  position: absolute;
+  top: 0;
+  right: 0;
+   margin-right: 13px;
+}
+  .currentTemp{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 196px;
+  height: 200px;
+  background: rgb(41, 41, 41);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 13px;
+}
+}

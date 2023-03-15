@@ -16,22 +16,22 @@ const Table=({place,overall,uv,country,localtime,lastupdated})=>{
         <th>Last Updated</th>
       </tr>
       <tr>
-        <td data-th="Supplier Code">
+        <td data-th="Place">
           {place}
         </td>
-        <td data-th="Supplier Name">
+        <td data-th="Overall">
          {overall}
         </td>
-        <td data-th="Invoice Number">
+        <td data-th="UV">
           {uv}
         </td>
-        <td data-th="Invoice Date">
+        <td data-th="Country">
           {country}
         </td>
-        <td data-th="Due Date">
+        <td data-th="Local Time">
           {localtime}
         </td>
-        <td data-th="Net Amount">
+        <td data-th="Last Updated">
           {lastupdated}
         </td>
       </tr>
